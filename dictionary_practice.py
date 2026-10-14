@@ -2,12 +2,13 @@
 dictionary notes!
 
 definition: 
-like a list -- but uses words ("keys") to access information as opposed to indices
+like a list -- but uses "keys" to access information as opposed to indices
+the keys must be immutable: strings, ints, and tuples all work, but NOT LISTS
 the values can be basically anything -- lists, another dictionary, integers, strings, etc!
 
 creating a new dictionary:
 my_empty_dictionary = {}
-see below letterScoreDict for an example of a fully-formed dictionary
+see letterScoreDict below for an example of a fully-formed dictionary
 
 access a value in a dictionary:
 dictionary_name["key"]
