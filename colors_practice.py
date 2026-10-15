@@ -76,13 +76,15 @@ def colorize(text, color):
 #
 # colorize Tests
 #
-print( "colorize('hi', 'red')     == '\\033[31mhi\\033[0m'  should be True :",  colorize('hi', 'red') == '\033[31mhi\033[0m' )
-print( "colorize('go', 'green')   == '\\033[32mgo\\033[0m'  should be True :",  colorize('go', 'green') == '\033[32mgo\033[0m' )
-print( "colorize('', 'blue')      == '\\033[34m\\033[0m'    should be True :",  colorize('', 'blue') == '\033[34m\033[0m' )
-print( "colorize('plain', 'pink') == 'plain'              should be True :",  colorize('plain', 'pink') == 'plain' )   # not a key!
-print( "colorize('plain', '')     == 'plain'              should be True :",  colorize('plain', '') == 'plain' )
-print( "this should look yellow :",  colorize('yellow text', 'yellow') )   # check with your eyes!
+def colorizeTests():
+    print( "colorize('hi', 'red')     == '\\033[31mhi\\033[0m'  should be True :",  colorize('hi', 'red') == '\033[31mhi\033[0m' )
+    print( "colorize('go', 'green')   == '\\033[32mgo\\033[0m'  should be True :",  colorize('go', 'green') == '\033[32mgo\033[0m' )
+    print( "colorize('', 'blue')      == '\\033[34m\\033[0m'    should be True :",  colorize('', 'blue') == '\033[34m\033[0m' )
+    print( "colorize('plain', 'pink') == 'plain'              should be True :",  colorize('plain', 'pink') == 'plain' )   # not a key!
+    print( "colorize('plain', '')     == 'plain'              should be True :",  colorize('plain', '') == 'plain' )
+    print( "this should look yellow :",  colorize('yellow text', 'yellow') )   # check with your eyes!
 
+# TODO: call the test function to confirm your function works correctly!
 
 #--------------------------------------------------------------#
 # PART 3: grade_report
@@ -110,14 +112,16 @@ def grade_report(scores):
 #
 # grade_report Tests
 #
-class_scores = {"Ana": 92, "Ben": 78, "Cleo": 65, "Dev": 90, "Eli": 70}
-print( "grade_report(class_scores) should print 5 colored lines, then return 4 :" )
-print( grade_report(class_scores) )   # Ana and Dev green, Ben and Eli yellow, Cleo red
+def grade_report_tests():
+    class_scores = {"Ana": 92, "Ben": 78, "Cleo": 65, "Dev": 90, "Eli": 70}
+    print( "grade_report(class_scores) should print 5 colored lines, then return 4 :" )
+    print( grade_report(class_scores) )   # Ana and Dev green, Ben and Eli yellow, Cleo red
 
-print( "grade_report({'Zoe': 100}) should return 1 :",  grade_report({'Zoe': 100}) )
-print( "grade_report({'Max': 12})  should return 0 :",  grade_report({'Max': 12}) )
-print( "grade_report({})           should return 0 :",  grade_report({}) )   # empty dictionary!
+    print( "grade_report({'Zoe': 100}) should return 1 :",  grade_report({'Zoe': 100}) )
+    print( "grade_report({'Max': 12})  should return 0 :",  grade_report({'Max': 12}) )
+    print( "grade_report({})           should return 0 :",  grade_report({}) )   # empty dictionary!
 
+# TODO: call the test function to confirm your function works correctly!
 
 #--------------------------------------------------------------#
 # PART 4: count_colors
@@ -143,11 +147,14 @@ def count_colors(words):
 #
 # count_colors Tests
 #
-print( "count_colors(['red', 'cat', 'red', 'blue'])  should be {'red': 2, 'blue': 1} :",  count_colors(['red', 'cat', 'red', 'blue']) )
-print( "count_colors(['green', 'green', 'green'])   should be {'green': 3} :",  count_colors(['green', 'green', 'green']) )
-print( "count_colors(['dog', 'pink', 'tree'])       should be {} :",  count_colors(['dog', 'pink', 'tree']) )   # no colors
-print( "count_colors(['reset', 'bold', 'red'])      should be {'red': 1} :",  count_colors(['reset', 'bold', 'red']) )   # not real colors
-print( "count_colors([])                            should be {} :",  count_colors([]) )
+def count_colors_tests():
+    print( "count_colors(['red', 'cat', 'red', 'blue'])  should be {'red': 2, 'blue': 1} :",  count_colors(['red', 'cat', 'red', 'blue']) )
+    print( "count_colors(['green', 'green', 'green'])   should be {'green': 3} :",  count_colors(['green', 'green', 'green']) )
+    print( "count_colors(['dog', 'pink', 'tree'])       should be {} :",  count_colors(['dog', 'pink', 'tree']) )   # no colors
+    print( "count_colors(['reset', 'bold', 'red'])      should be {'red': 1} :",  count_colors(['reset', 'bold', 'red']) )   # not real colors
+    print( "count_colors([])                            should be {} :",  count_colors([]) )
+
+# TODO: call the test function to confirm your function works correctly!
 
 # Now print each count in its own color:
 favorite_colors = ["blue", "red", "blue", "green", "pizza", "blue", "red", "yellow"]
@@ -179,6 +186,9 @@ def rainbow(text):
 #
 # rainbow Tests
 #
-print( "rainbow('hi')  == '\\033[31mh\\033[33mi\\033[0m' should be True :",  rainbow('hi') == '\033[31mh\033[33mi\033[0m' )
-print( "rainbow('')    == '\\033[0m'                     should be True :",  rainbow('') == '\033[0m' )
-print( "this should look like a rainbow :",  rainbow('Dictionaries are awesome!') )
+def rainbowTests():
+    print( "rainbow('hi')  == '\\033[31mh\\033[33mi\\033[0m' should be True :",  rainbow('hi') == '\033[31mh\033[33mi\033[0m' )
+    print( "rainbow('')    == '\\033[0m'                     should be True :",  rainbow('') == '\033[0m' )
+    print( "this should look like a rainbow :",  rainbow('Dictionaries are awesome!') )
+
+# TODO: call the test function to confirm your function works correctly!

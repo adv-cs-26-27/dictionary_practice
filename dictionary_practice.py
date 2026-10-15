@@ -43,24 +43,28 @@ def scrabbleScore(word):
     which can have any characters, and should return the 
     Scrabble score of that string.
     """
+    # TODO: complete this function
     return 0
 
 #
 # scrabbleScore Tests
 #
-print( "scrabbleScore('quetzal')           should be  25 :",  scrabbleScore('quetzal') )
-print( "scrabbleScore('jonquil')           should be  23 :",  scrabbleScore('jonquil') )
-print( "scrabbleScore('syzygy')            should be  25 :",  scrabbleScore('syzygy') )
-print( "scrabbleScore('?!@#$%^&*()')       should be  0 :",  scrabbleScore('?!@#$%^&*()') )
-print( "scrabbleScore('')                  should be  0 :",  scrabbleScore('') )
-print( "scrabbleScore('abcdefghijklmnopqrstuvwxyz') should be  87 :",  scrabbleScore('abcdefghijklmnopqrstuvwxyz') )
-print( "scrabbleScore('a')                 should be  1 :",  scrabbleScore('a') )   # single letter
-print( "scrabbleScore('qi')                should be  11 :",  scrabbleScore('qi') )
-print( "scrabbleScore('zzz')               should be  30 :",  scrabbleScore('zzz') )   # repeated letters each count
-print( "scrabbleScore('jazz')              should be  29 :",  scrabbleScore('jazz') )
-print( "scrabbleScore('cat123')            should be  5 :",  scrabbleScore('cat123') )   # digits score 0
-print( "scrabbleScore('hello world!')      should be  17 :",  scrabbleScore('hello world!') )   # spaces/punctuation score 0
-print( "scrabbleScore('oxyphenbutazone')   should be  41 :",  scrabbleScore('oxyphenbutazone') )
+def scrabbleScoreTests():
+    print( "scrabbleScore('quetzal')           should be  25 :",  scrabbleScore('quetzal') )
+    print( "scrabbleScore('jonquil')           should be  23 :",  scrabbleScore('jonquil') )
+    print( "scrabbleScore('syzygy')            should be  25 :",  scrabbleScore('syzygy') )
+    print( "scrabbleScore('?!@#$%^&*()')       should be  0 :",  scrabbleScore('?!@#$%^&*()') )
+    print( "scrabbleScore('')                  should be  0 :",  scrabbleScore('') )
+    print( "scrabbleScore('abcdefghijklmnopqrstuvwxyz') should be  87 :",  scrabbleScore('abcdefghijklmnopqrstuvwxyz') )
+    print( "scrabbleScore('a')                 should be  1 :",  scrabbleScore('a') )   # single letter
+    print( "scrabbleScore('qi')                should be  11 :",  scrabbleScore('qi') )
+    print( "scrabbleScore('zzz')               should be  30 :",  scrabbleScore('zzz') )   # repeated letters each count
+    print( "scrabbleScore('jazz')              should be  29 :",  scrabbleScore('jazz') )
+    print( "scrabbleScore('cat123')            should be  5 :",  scrabbleScore('cat123') )   # digits score 0
+    print( "scrabbleScore('hello world!')      should be  17 :",  scrabbleScore('hello world!') )   # spaces/punctuation score 0
+    print( "scrabbleScore('oxyphenbutazone')   should be  41 :",  scrabbleScore('oxyphenbutazone') )
+
+# TODO: call the test function to confirm your function works correctly!
 
 #--------------------------------------------------------------#
 
@@ -85,24 +89,28 @@ A dictionary works well here!
 """
 
 def transcribe(dna):
+    # TODO: complete this function
     pass
 
 #
 # Tests
 #
-print( "transcribe('ACGTTGCA') should be  'UGCAACGU' :",  transcribe('ACGTTGCA') )
-print( "transcribe('ACG TGCA') should be  'UGCACGU' :",  transcribe('ACG TGCA') )  # Note that the space disappears
-print( "transcribe('GATTACA')  should be  'CUAAUGU' :",  transcribe('GATTACA') )
-print( "transcribe('cs5')      should be  ''  :",  transcribe('cs5') ) # Note that other characters disappear
-print( "transcribe('')         should be  '' :",  transcribe('') )   # Empty strings!
-print( "transcribe('A')        should be  'U' :",  transcribe('A') )   # single nucleotide
-print( "transcribe('AAAA')     should be  'UUUU' :",  transcribe('AAAA') )
-print( "transcribe('TTTT')     should be  'AAAA' :",  transcribe('TTTT') )
-print( "transcribe('CCGG')     should be  'GGCC' :",  transcribe('CCGG') )
-print( "transcribe('A-C-G-T')  should be  'UGCA' :",  transcribe('A-C-G-T') )   # dashes disappear
-print( "transcribe('acgtACGT') should be  'UGCA' :",  transcribe('acgtACGT') )   # lowercase letters disappear
-print( "transcribe('12345')    should be  '' :",  transcribe('12345') )   # nothing valid at all
-print( "transcribe('ATG CCC TAA') should be  'UACGGGAUU' :",  transcribe('ATG CCC TAA') )
+def transcribeTests():
+    print( "transcribe('ACGTTGCA') should be  'UGCAACGU' :",  transcribe('ACGTTGCA') )
+    print( "transcribe('ACG TGCA') should be  'UGCACGU' :",  transcribe('ACG TGCA') )  # Note that the space disappears
+    print( "transcribe('GATTACA')  should be  'CUAAUGU' :",  transcribe('GATTACA') )
+    print( "transcribe('cs5')      should be  ''  :",  transcribe('cs5') ) # Note that other characters disappear
+    print( "transcribe('')         should be  '' :",  transcribe('') )   # Empty strings!
+    print( "transcribe('A')        should be  'U' :",  transcribe('A') )   # single nucleotide
+    print( "transcribe('AAAA')     should be  'UUUU' :",  transcribe('AAAA') )
+    print( "transcribe('TTTT')     should be  'AAAA' :",  transcribe('TTTT') )
+    print( "transcribe('CCGG')     should be  'GGCC' :",  transcribe('CCGG') )
+    print( "transcribe('A-C-G-T')  should be  'UGCA' :",  transcribe('A-C-G-T') )   # dashes disappear
+    print( "transcribe('acgtACGT') should be  'UGCA' :",  transcribe('acgtACGT') )   # lowercase letters disappear
+    print( "transcribe('12345')    should be  '' :",  transcribe('12345') )   # nothing valid at all
+    print( "transcribe('ATG CCC TAA') should be  'UACGGGAUU' :",  transcribe('ATG CCC TAA') )
+
+# TODO: call the test function to confirm your function works correctly!
 
 #--------------------------------------------------------------#
 
@@ -114,19 +122,23 @@ return True, but banagrams(["I", "T", "B"], "BIB") should return False.
 """
 
 def bananagrams(letters, word):
+    # TODO: complete this function
     pass
 
 #
 # Tests
 #
-print( "bananagrams(['I', 'T', 'B'], 'BIT')       should be  True :",  bananagrams(['I', 'T', 'B'], 'BIT') )
-print( "bananagrams(['I', 'T', 'B'], 'BIB')       should be  False :",  bananagrams(['I', 'T', 'B'], 'BIB') )   # only one B
-print( "bananagrams(['B', 'I', 'T', 'S'], 'BIT')  should be  True :",  bananagrams(['B', 'I', 'T', 'S'], 'BIT') )   # leftover letters are fine
-print( "bananagrams(['B', 'I', 'T'], 'BITS')      should be  False :",  bananagrams(['B', 'I', 'T'], 'BITS') )   # missing a letter
-print( "bananagrams(['B', 'I', 'B', 'T'], 'BIB')  should be  True :",  bananagrams(['B', 'I', 'B', 'T'], 'BIB') )   # duplicate letters available
-print( "bananagrams(['A', 'A', 'A'], 'AAAA')      should be  False :",  bananagrams(['A', 'A', 'A'], 'AAAA') )   # not enough copies
-print( "bananagrams(['L', 'E', 'P', 'P', 'A'], 'APPLE') should be  True :",  bananagrams(['L', 'E', 'P', 'P', 'A'], 'APPLE') )   # order doesn't matter
-print( "bananagrams(['P', 'L', 'E', 'A'], 'APPLE')      should be  False :",  bananagrams(['P', 'L', 'E', 'A'], 'APPLE') )   # needs two Ps
-print( "bananagrams(['A', 'B'], '')               should be  True :",  bananagrams(['A', 'B'], '') )   # empty word can always be made
-print( "bananagrams([], '')                       should be  True :",  bananagrams([], '') )   # empty everything
-print( "bananagrams([], 'A')                      should be  False :",  bananagrams([], 'A') )   # no letters to use
+def bananagramsTest():
+    print( "bananagrams(['I', 'T', 'B'], 'BIT')       should be  True :",  bananagrams(['I', 'T', 'B'], 'BIT') )
+    print( "bananagrams(['I', 'T', 'B'], 'BIB')       should be  False :",  bananagrams(['I', 'T', 'B'], 'BIB') )   # only one B
+    print( "bananagrams(['B', 'I', 'T', 'S'], 'BIT')  should be  True :",  bananagrams(['B', 'I', 'T', 'S'], 'BIT') )   # leftover letters are fine
+    print( "bananagrams(['B', 'I', 'T'], 'BITS')      should be  False :",  bananagrams(['B', 'I', 'T'], 'BITS') )   # missing a letter
+    print( "bananagrams(['B', 'I', 'B', 'T'], 'BIB')  should be  True :",  bananagrams(['B', 'I', 'B', 'T'], 'BIB') )   # duplicate letters available
+    print( "bananagrams(['A', 'A', 'A'], 'AAAA')      should be  False :",  bananagrams(['A', 'A', 'A'], 'AAAA') )   # not enough copies
+    print( "bananagrams(['L', 'E', 'P', 'P', 'A'], 'APPLE') should be  True :",  bananagrams(['L', 'E', 'P', 'P', 'A'], 'APPLE') )   # order doesn't matter
+    print( "bananagrams(['P', 'L', 'E', 'A'], 'APPLE')      should be  False :",  bananagrams(['P', 'L', 'E', 'A'], 'APPLE') )   # needs two Ps
+    print( "bananagrams(['A', 'B'], '')               should be  True :",  bananagrams(['A', 'B'], '') )   # empty word can always be made
+    print( "bananagrams([], '')                       should be  True :",  bananagrams([], '') )   # empty everything
+    print( "bananagrams([], 'A')                      should be  False :",  bananagrams([], 'A') )   # no letters to use
+
+# TODO: call the test function to confirm your function works correctly!
